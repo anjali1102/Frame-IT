@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #da1c52;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+img {
+  object-fit: contain;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.logo {
+  width: 24rem;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.quote-wrapper {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.quote-display {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.quote-author {
+  color: rgb(54, 247, 24);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.quote-btn {
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  margin-top: 40px;
+  padding: 20px 60px;
+  border-radius: 40px;
+  display: block;
+  cursor: pointer;
+}
+
+.copy-share-button {
+  margin-top: 1rem;
+  color: black;
+  cursor: pointer;
+  padding: 1rem 1rem;
+}
+
+.copy-share-button i.copy-clicked {
+  transform: scale(2);
+  animation: shake 5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  transform: translate3d(0, 0, 0);
+}
+
+.share-twt {
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+}
+
+.share-twt:hover {
+  transform: scale(1.1);
+  border: 2px solid black;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-10px, -5px, 0) rotate(-10deg);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(10px, 5px, 0) rotate(10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-10px, -5px, 0) rotate(-10deg);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(10px, 5px, 0) rotate(10deg);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .quote-display,
+  .quote-author {
+    font-size: 19px;
+  }
+
+  .quote-btn {
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 30px;
+  }
+
+  .quote-wrapper {
+    padding: 0.5rem 0.5rem;
+  }
+}
